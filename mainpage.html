@@ -1,0 +1,413 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<!-- divinectorweb.com -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Website Layout Design</title>
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css.css"> 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="css.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Owl Carousel</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+        .links{
+                  color: white;
+                  text-decoration: none;
+                  font-size: 14px;
+                }
+                .links:hover{
+                  color: orange;
+                }
+                h6{
+                  color:white;
+                }
+                h5{
+                  color:white;
+                }
+        * {
+            font-family: 'Poppins', sans-serif;
+        }
+        img {
+            height: 280px;
+        }
+
+        body {
+            background: rgb(34, 32, 32);
+        }
+    
+        .bg-container
+        {
+            background-color:black;
+            background-size: cover;
+            height:100vh;
+            padding:100px;
+
+        }
+        .bg-containers
+        {
+            background-color:black;
+            background-size: cover;
+            height:50vh;
+            font-family: 'Courier New', Courier, monospace;
+
+        }
+        .card-container
+        {
+           
+            border-radius:14px;
+            padding:10px;
+            text-align:center;
+            border-width: 1px;
+            border-color: aqua;
+            background-color:#b8f2ec;
+            width:400px;
+            display:inline;
+            margin:70px;
+
+            
+        }
+        @media screen and (max-width: 500px) {
+
+.card-container {
+    width: 70%;
+}
+}
+
+        .img
+        {
+            height:120px;
+            width:120px;
+
+        }
+        .kk
+        {
+          font-family: 'Times New Roman', Times, serif;
+          color:white;  
+          width: 400px;
+        }
+        .kk2 img
+        {
+            width:400px;
+            height:400px;
+            margin-left: 500px;
+            margin-top: -100px;
+        }
+        .marg{
+            margin-left: 350px;
+        }
+        .marg1{
+            margin-left: 100px;
+        }
+        .butt{
+            background-color: #75e3eb;
+        }
+        
+        @media only screen and (min-width: 600px) {
+  iframe {width: 100%;}
+        }
+       
+        
+    </style>
+</head>
+<body>
+
+<header>
+        <ul class="nav-area">
+            <li><a href="mainpage.html" style="color:#F8F988;font-family:kusanagi;">Home</a></li>
+            <!-- <li><a href="aboutpage.html" style="color:#F8F988;font-family:kusanagi;">About</a></li> -->
+            <li><a href="selectpage.html" style="color:#F8F988;font-family:kusanagi;">Services</a></li>
+        
+            <li><a href="login.html" style="color:#F8F988;font-family:kusanagi;">LOGIN/SIGNUP</a></li>
+            
+            <li><a href="mailto:narendravarma18042004@gmail.com" style="color:#F8F988">Contact</a></li>
+        </ul>
+        </div>
+
+
+        <div class="welcome-text">
+        <h1 style="color:#BAD7E9">CODEz</h1>
+        <p style="color:#BAD7E9">where you learn,where you enjoy</p>
+        <a href="selectpage.html" style="text-decoration:none;">start coding</a>
+        </div>
+
+
+</header>
+<div class="container-fluid my-5">
+    
+    <div class="row">
+        <div class="col-12 m-auto">
+            <div class="owl-carousel owl-theme">
+                <div class="item mb-4">
+                    <div class="card border-0 shadow">
+                        <img src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/Clanguage-1024x341.png" alt="a canyon" style="--g: 20px;--b:5px;--c:#D95B43; class="card-img-top">
+                        <div class="card-body">
+                            <div class="card-title text-center">
+                                <h4 style="font-family:Impact, Haettenschweiler,'Arial Narrow Bold' sans-serif;">C</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="card border-0 shadow">
+                        <img src="https://img.freepik.com/premium-photo/programming-code-abstract-technology-background_272306-158.jpg?size=626&ext=jpg" alt="" class="card-img-top">
+                        <div class="card-body">
+                            <div class="card-title text-center">
+                                <h4>C++</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card border-0 shadow">
+                        <img src="https://img.freepik.com/premium-photo/java-programming-concept-virtual-machine-server-room-background_161452-2879.jpg?size=626&ext=jpg&ga=GA1.1.1699151371.1701350191&semt=sph" alt="" class="card-img-top">
+                        <div class="card-body">
+                            <div class="card-title text-center">
+                                <h4>JAVA</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card border-0 shadow">
+                        <img src="https://img.freepik.com/premium-photo/coding-programming-site-application-laptop_272306-134.jpg?size=626&ext=jpg&ga=GA1.1.1699151371.1701350191&semt=sph" alt="" class="card-img-top">
+                        <div class="card-body">
+                            <div class="card-title text-center">
+                                <h4>PYTHON</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card border-0 shadow">
+                        <img src="https://tse4.mm.bing.net/th?id=OIP.Q82hIHxNKTr9wI17ywJkXQHaEK&pid=Api&P=0&h=180" alt="" class="card-img-top">
+                        <div class="card-body">
+                            <div class="card-title text-center">
+                                <h4>HTML</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card border-0 shadow">
+                        <img src="https://tse4.mm.bing.net/th?id=OIP.1Se7tgAnRox2K9H5L77QOAAAAA&pid=Api&P=0&h=180" alt="" class="card-img-top">
+                        <div class="card-body">
+                            <div class="card-title text-center">
+                                <h4>javascript</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<!-- Option 1: Bootstrap Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+    integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+    crossorigin="anonymous"></script>
+<script>
+    $('.owl-carousel').owlCarousel({
+        loop: true,
+        margin: 15,
+        nav: true,
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                items: 2
+            },
+            1000: {
+                items: 3
+            }
+        }
+    })
+</script>
+<div class="bg-container d-flex flex-row">
+    <div class="card-container">
+        <img src="https://cdn-icons-png.flaticon.com/128/59/59118.png?ga=GA1.1.7936613.1700993314&semt=ais" class="img" style="width:100px;height:90px;"/> 
+        <h1 style="font-family:optima;font-color:#0A2647;">
+            coding<br>
+        </h1>
+        <p style="font-family:brush script mt;font-size:27px;">
+            <br>
+            Make it work, make it right, make it fast.” <br>– Kent Beck
+        </p>
+
+
+    </div>
+
+    <div class="card-container">
+        <i class="fa-sharp fa-solid fa-square-code" style="color:red;"></i>
+        <img src="https://cdn-icons-png.flaticon.com/128/3195/3195624.png?ga=GA1.1.7936613.1700993314&semt=ais" class="img" style="width:100px;height:90px;"/> 
+        <h1 style="font-family:optima;">
+            compiling
+        </h1>
+        <p style="font-family:brush script mt;font-size:27px;">
+            <br>
+            I had a running compiler and nobody would touch it<br>
+            — Grace Hopper
+        </p>
+        
+
+
+    </div>
+
+
+    <div class="card-container">
+        <img src="https://cdn-icons-png.flaticon.com/128/8617/8617750.png?ga=GA1.1.7936613.1700993314&semt=ais" class="img" style="width:100px;height:90px;"/> 
+        <h1 style="font-family:optima">
+            debugging
+        </h1>
+        <p style="font-family:brush script mt;font-size:27px;">
+            <br>
+            programming allows think about thinking, debugging learn you learn learning<br>
+             - Nicholas neograpete
+            
+        </p>
+
+
+    </div>
+    </div>
+<div class="bg-containers">
+            <div class=" d-flex flex-row" style="height:250px;">
+                    <div CLASS="kk marg1" style="width:600px;">
+                            <h3 style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;font-color:#0A2647;height:50px;">
+                                <b style="font-style:barcelona;color:#05bffc">ABOUT US</b><BR><BR>
+                            </h3>
+                            <h1 style="font-family:atrament;font-size:40px;">
+                                <q>sucess is vey much intersection of team work</q>&nbsp;&nbsp;&nbsp;&nbsp;<p style="font-size:25px;"><i>-duskin moscovitz</i></p>
+                                </h1>
+                    </div>
+                    <div class="kk2" style="margin-left:100px;position:relative;right:100px;">
+                        <img src="https://tse2.mm.bing.net/th?id=OIP.gReLR6hZjwyBxHmfLN1AVwHaFj&pid=Api&P=0&h=180" class="marg" height="600px" height="400px;">
+                    </div>
+            </div>
+            <a href="https://www.codecademy.com/resources/blog/10-learner-stories-code/">
+            <button class="glow-on-hover" type="button">KNOW MORE--></button></a>
+</div>
+<section>
+<div style="width:100%;height:500px;padding: 0 10%;">
+    <div class="row">
+        <h1 style="padding-top: 3%;"><b style="color:#05bffc;font-weight:900px;">HOW CODING SHAPES YOUR CARRER?</b></h1>
+        <div class="col-lg-6" style="color: white;padding-top: 10%;">
+            <p style="font-weight:200px;font-size:25px;font-family:monolisa;"> Coding can also open up many opportunities for you in more creative fields, such as graphic design, web or app development.</p>
+        </div>
+    
+            <div class="col-lg-6">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/25RdTDN2Trg?si=9HDpILHlWLozgG2j" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        
+        </div>
+    </div>
+</div>
+</section><br>
+<section>
+    <div class="last">
+    <div style="background-color: #434242;width:100%;height:450px;line-height: 2.5;padding-top: 30px;">
+    <div style="padding-left:100px;display: flex;">
+      <div style="flex:1;width: 150px;">
+        <h5>CUSTOMER SERVICE</h5>
+        <a href="#" class="links">Payment Options</a><br>
+        <a href="#" class="links">Track Your performance</a><br>
+        <a href="#" class="links">Find New Hackathons</a><br>
+        <a href="#" class="links">Encircle program</a><br>
+      </div>
+      <div style="flex:1;width: 150px;margin-right: 4%;">
+        <h5>Contact Us</h5>
+        <a href="tel:8143628288" class="links">8143628288</a><br>
+        <a href="mailto:narendravarma18042004@gmail.com" class="links">narendravarma18042004@gmail.com</a><br>
+        <a href="#" class="links">Frequently asked quetions</a><br>
+      </div>
+      <div style="flex:1;width: 150px;">
+        <h5>POLICIES</h5>
+        <a href="#" class="links">Codespace</a><br>
+        <a href="#" class="links">Cancellation</a><br>
+        <a href="#" class="links">Shipping</a><br>
+        <a href="#" class="links">Warranty Policies</a><br>
+        <a href="#" class="links">Delivery Information</a><br>
+      </div>
+      <div style="flex:1;width: 150px;">
+        <h5>ABOUT CODEZ</h5>
+        <a href="about.html" class="links">About Us</a><br>
+        <a href="#" class="links">Careers</a><br>
+      </div>
+      <div style="flex:2;">
+        <h5 style="margin-bottom: 20px;">DOWNLOAD WORLD OF CODEZ APP</h5>
+        <div style="margin-left: 30px;">
+          <button style="background-color: black;border-color:gray;color:white;border-radius:5px;border:1px solid;margin-right: 10px;">
+            <i class="fa-brands fa-apple" style="font-size:35px;margin-top: 10px;"></i> <b><p style="display:inline;margin-bottom:25px;">From App Store</p></b>
+          </button>
+          <button style="background-color: black;border-color:gray;color:white;border-radius:5px;border:1px solid;display: inline;">
+            <i class="fa-brands fa-google-play" style="font-size:35px;margin-top: 10px;"></i> <b><p style="display:inline;margin-bottom:25px;">From PlayStore</p></b>
+          </button>
+        </div>
+        <div>
+          <h6 style="margin-top: 30px;">FOLLOW US ON</h6>
+          <div style="margin-left: 30px;">
+            
+            <i class="fa-brands fa-instagram" style="font-size: 30px;margin-right: 20px;"></i>
+            <i class="fa-brands fa-facebook " style="font-size: 30px;margin-right: 20px;"></i>
+            <i class="fa-brands fa-linkedin " style="font-size: 30px;margin-right: 20px;"></i>
+            <i class="fa-solid fa-envelope " style="font-size: 30px;;margin-right: 20px;"></i>
+          </div>
+        </div>
+        <h6 style="margin-top: 10px;">Need Help?</h6>
+        <p style="margin-top: 10px;color: white;margin-bottom: 0;"><a href = "mailto: narendravarma18042004@gmail.com" style="color:white;">Click Here</a> to chat with us on <i class="fa-brands fa-whatsapp" style="font-size:30px;color: rgb(21, 183, 21);"></i></p>
+        <div>
+          <p style="display:inline;color: gray;margin-left: 60px;font-size: 10px;">Terms & Conditions</p>
+          <p style="display:inline;color: gray;font-size: 12px;">Privacy Policy</p>
+        </div>
+        
+      </div>
+    </div>
+    <hr style="color:white;border-width:3px;background-color: white;border-top: 0;">
+    <div style="color:gray;padding-top: 15px;margin-left: 15%;">
+      <i class="fa-brands fa-cc-visa" style="font-size:35px;margin-right: 50px;"></i>
+      <i class="fa-brands fa-cc-mastercard" style="font-size:35px;margin-right: 50px;"></i>
+      <i class="fa-brands fa-paypal" style="font-size:35px;margin-right: 50px;"></i>
+      <p style="margin-left:550px;display:inline;">© 2022 CODEZ. All Rights Reserved.</p>
+    </div>
+    </div>
+    </div>
+  </section
+</body>
+</html>

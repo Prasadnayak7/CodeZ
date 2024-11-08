@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Armstrong Number Checker</title>
+    <style>
+        body {
+            background-color:rgb(214, 214, 201);
+            color:black;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh; /* Set the body height to 100% of the viewport height */
+        }
+
+        .result {
+            font-size: 24px;
+            text-align: center;
+        }
+
+        #btn {
+            transition: transform 0.3s;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+
+        #btn:hover {
+            transform: scale(1.1);
+        }
+
+        input {
+            padding: 5px;
+            margin: 10px;
+            font-size: 16px;
+        }
+
+        button {
+            padding: 10px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <input type="text" id="input-text" placeholder="Enter a number">
+    <button id="btn">Submit</button>
+    <div class="result" id="result"></div>
+
+    <script>
+        document.getElementById("btn").addEventListener("click", function() {
+            let txt = document.getElementById("input-text").value;
+            checkPalindrome(txt);
+        });
+
+        function checkPalindrome(txt) {
+            var original = txt;
+            var reverse = txt.split('').reverse().join('');
+
+            if (original === reverse) {
+                document.getElementById("result").innerHTML = "Yes, it's a palindrome";
+            } else {
+                document.getElementById("result").innerHTML = "Nope, not a palindrome";
+            }
+        }
+
+        
+    </script>
+</body>
+</html>
